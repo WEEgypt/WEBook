@@ -7,6 +7,11 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
 		<link rel="stylesheet" href="Style.css" />
+        <style>
+            button {
+				width: 153px;
+            }
+        </style>
     </head>
     <body>
         <br />
@@ -15,13 +20,14 @@
         <h3 style="color: #6c4389;">Informations</h3>
         <div class="padding">
 			<button onclick="Prepaid()">Prepaid</button>
-			<button onclick="Postpaid()">Postpaid</button>
-			<button onclick="ADSL()">ADSL</button></br></br>
-			<button onclick="FixedLine()">Fixed Line</button>
+			<button onclick="Postpaid()">Postpaid</button></br></br>
+			<button onclick="ADSL()">ADSL</button>
+			<button onclick="FixedLine()">Fixed Line</button></br></br>
 			<button onclick="USSD()">USSD</button>
 			<button onclick="Devices()">Devices</button></br></br>
-			<button onclick="ImportanatLinks()" style="width:153px">Importanat links</button>
-			<button onclick="AllForms()" style="width:153px">All Forms</button>
+			<button onclick="TNPS()">TNPS</button>
+			<button onclick="ImportanatLinks()">Importanat links</button></br></br>
+			<button onclick="AllForms()" style="width:310px">All Forms</button>
         </div>
 		<script>
 			function Prepaid() {
@@ -41,6 +47,9 @@
 			}
 			function Devices() {
 				window.open("Devices.html","_self");
+			}
+			function TNPS() {
+				window.open("TNPS.html","_self");
 			}
 			function ImportanatLinks() {
 				window.open("ImportanatLinks.html","_self");

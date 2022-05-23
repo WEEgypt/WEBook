@@ -7,6 +7,11 @@
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
 		<link rel="stylesheet" href="Style.css" />
+        <style>
+            button {
+				width: 310px;
+            }
+        </style>
     </head>
     <body>
         <br />
@@ -14,10 +19,28 @@
         <br />
         <h3 style="color: #6c4389;">Importanat Links</h3>
         <div class="padding">
-			
+			<button onclick="BSSBortal()">BSS Bortal</button></br></br>
+			<button onclick="DataLineActivation()">Data Line Activation</button></br></br>
+			<button onclick="Outlook()">Outlook</button></br></br>
+			<button onclick="Tkafol()">Tkafol</button></br></br>
+			<button onclick="Tamween()">Tamween</button>
         </div>
 		<script>
-			
+			function BSSBortal() {
+				window.open("https://extranet.te.eg:12900/oc/bes/sm/login/login-egypt.html","_blank");
+			}
+			function DataLineActivation() {
+				window.open("https://my.te.eg/user/line-activation","_blank");
+			}
+			function Outlook() {
+				window.open("https://mail.te.eg/","_blank");
+			}
+			function Tkafol() {
+				window.open("https://tk.te.eg/","_blank");
+			}
+			function Tamween() {
+				window.open("https://www.tamwin.com.eg/","_blank");
+			}
 		</script>
         <footer>
 			</br>
