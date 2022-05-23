@@ -13,8 +13,13 @@ body {
 	font-family: verdana;
 	font-size: 14px;
 	margin: auto;
-	width: 580px;
+	width: -webkit-fill-available;
+	max-width: 960px;
 	color: #555;
+}
+object {
+	width: -webkit-fill-available;
+	max-width: 960px;
 }
 ::-webkit-input-placeholder {
 	color: #bbb;
