@@ -14,3 +14,11 @@ var Password = "sohag@123";
         }
     }
 }
+function SetFocus() {
+    document.getElementById("login").focus();
+}
+function PressEnterToLogin() {
+    if (event.which == 13 || event.keyCode == 13) {
+        Login();
+    }
+}
