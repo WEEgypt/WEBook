@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>WE Book - System</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+		<script onload="Check()" src="JavaScript.js"></script>
+        <style>
+            button {
+                width: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <br />
+        <br />
+        <br />
+        <h3 style="color: #6c4389;">System</h3>
+        <div class="padding">
+            <button onclick="CreatePrepaid()">Create Prepaid</button>
+            <button onclick="CreateFMC()">Create FMC</button><br />
+            <br />
+            <button onclick="DismissFMC()">Dismiss FMC</button>
+            <button onclick="CreateWeMix()">Create We Mix</button><br />
+            <br />
+            <button onclick="CreateADSL()">Create ADSL</button>
+            <button onclick="AssignCPE()">Assign CPE</button>
+        </div>
+        <script>
+            function CreatePrepaid() {
+                window.open("CreatePrepaid.html", "_self");
+            }
+            function CreateFMC() {
+                window.open("CreateFMC.html", "_self");
+            }
+            function DismissFMC() {
+                window.open("DismissFMC.html", "_self");
+            }
+            function CreateWeMix() {
+                window.open("CreateWeMix.html", "_self");
+            }
+            function CreateADSL() {
+                window.open("CreateADSL.html", "_self");
+            }
+            function AssignCPE() {
+                window.open("AssignCPE.html", "_self");
+            }
+        </script>
+        <footer>
+            <br />
+            <button class="back" onclick="history.back()">Back</button>
+            <br />
+            <br />
+        </footer>
+    </body>
+</html>

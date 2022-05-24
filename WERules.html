@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title>WE Book - WE Rules</title>
+        <link rel="icon" href="Icon.png" />
+        <link rel="apple-touch-icon" href="Icon.png" />
+        <link rel="stylesheet" href="Style.css" />
+		<script onload="Check()" src="JavaScript.js"></script>
+        <style>
+            button {
+                width: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <br />
+        <br />
+        <br />
+        <h3 style="color: #6c4389;">WE Rules</h3>
+        <div class="padding">
+            <button onclick="RetailStandards()">Retail Standards</button>
+            <button onclick="DressCode()">Dress Code</button><br />
+            <br />
+            <button onclick="NTRA()" style="width: 324px;">NTRA</button>
+        </div>
+        <script>
+            function RetailStandards() {
+                window.open("RetailStandards.html", "_self");
+            }
+            function DressCode() {
+                window.open("DressCode.html", "_self");
+            }
+            function NTRA() {
+                window.open("NTRA.html", "_self");
+            }
+        </script>
+        <footer>
+            <br />
+            <button class="back" onclick="history.back()">Back</button>
+            <br />
+            <br />
+        </footer>
+    </body>
+</html>
