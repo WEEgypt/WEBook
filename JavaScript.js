@@ -1,4 +1,4 @@
-var Password = "123";
+var Password = "sohag@123";
 {
     init1: function Login() {
         sessionStorage.setItem("login", document.getElementById("login").value);
