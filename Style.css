@@ -1,3 +1,11 @@
+:root {
+    --bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #000;
+    }
+}
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7,19 +15,19 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 body {
-    background-color: white;
+    background-color: var(--bg);
     text-align: center;
     font-family: verdana;
     font-size: 14px;
     margin: auto;
     width: -webkit-fill-available;
-	width: -moz-fit-content;
+    width: -moz-fit-content;
     max-width: 960px;
     color: #555;
 }
 object {
     width: -webkit-fill-available;
-	width: -moz-available;
+    width: -moz-available;
     max-width: 960px;
 }
 iframe {
