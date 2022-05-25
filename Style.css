@@ -1,9 +1,11 @@
 :root {
     --bg: #fff;
+    --color: #fff;
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #000;
+        --color: #000;
     }
 }
 * {
@@ -35,7 +37,7 @@ iframe {
     max-width: 960px;
 }
 button {
-    color: #fff;
+    color: var(--color);
     background-color: #6c4389;
     border: 1px solid #6c4389;
     width: 100px;
