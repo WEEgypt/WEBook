@@ -14,7 +14,8 @@
 }
 html {
     line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: auto;
+    -moz-text-size-adjust: auto;
 }
 body {
     background-color: var(--bg);
@@ -22,15 +23,16 @@ body {
     font-family: verdana;
     font-size: 14px;
     margin: auto;
+    color: #555;
     width: -webkit-fill-available;
-    width: -moz-fit-content;
+    width: -moz-available;
     min-width: 360px;
     max-width: 960px;
-    color: #555;
 }
 object {
     width: -webkit-fill-available;
     width: -moz-available;
+    min-width: 360px;
     max-width: 960px;
 }
 iframe {
