@@ -30,7 +30,7 @@ function PressEnterToLogin() {
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || currentScrollPos == 0) {
         document.getElementById("logout").style.top = "15px";
     } else {
         document.getElementById("logout").style.top = "-50px";
