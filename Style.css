@@ -93,3 +93,27 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
+.logout {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    transition: top 0.3s;
+}
+@font-face {
+    font-family: "FontAwesome";
+    src: url("Fonts/fontawesome-webfont.woff?v=4.7.0");
+    src: url("Fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("Fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("Fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-sign-out:before {
+    content: "\f08b";
+}
