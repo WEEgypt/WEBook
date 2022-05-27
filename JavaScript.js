@@ -27,8 +27,7 @@ function PressEnterToLogin() {
     }
 }
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (currentScrollPos == 0) {
+    if (window.pageYOffset < 10) {
         document.getElementById("logout").style.top = "15px";
     } else {
         document.getElementById("logout").style.top = "-50px";
