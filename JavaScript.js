@@ -16,7 +16,6 @@ var Password = "sohag@123";
 }
 function Logout() {
     localStorage.setItem("login", "");
-    window.location.reload();
 }
 function SetFocus() {
     document.getElementById("login").focus();
