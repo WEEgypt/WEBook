@@ -13,6 +13,11 @@ var Password = "sohag@123";
             window.open("LoginPage.html", "_self");
         }
     }
+    init3: function CheckForLoginPageOnly() {
+        if (localStorage.getItem("login") == Password) {
+            window.open("index.html", "_self");
+        }
+    }
 }
 function Logout() {
     localStorage.setItem("login", "");
