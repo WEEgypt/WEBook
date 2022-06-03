@@ -99,6 +99,12 @@ footer {
     top: 15px;
     transition: top 0.3s;
 }
+.about {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    transition: top 0.3s;
+}
 @font-face {
     font-family: "FontAwesome";
     src: url("Fonts/fontawesome-webfont.woff?v=4.7.0");
@@ -116,4 +122,7 @@ footer {
 }
 .fa-sign-out:before {
     content: "\f08b";
+}
+.fa-info-circle:before {
+    content: "\f05a";
 }
