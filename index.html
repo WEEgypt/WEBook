@@ -12,6 +12,11 @@
             body {
                 max-width: 640px;
             }
+			.news, .news:hover {
+				all: unset;
+				cursor:pointer;
+				color: red;
+			}
         </style>
     </head>
     <body>
@@ -22,7 +27,7 @@
         <h1 style="color: #6c4389;">WE Book</h1>
         <h3 style="color: #6c4389;">South Upper Egypt Training Team</h3>
         <h3 style="color: #5d5c5c;">Sohag Area</h3>
-		<marquee behavior="scroll" width="100%" direction="left" scrollamount="8"><a href="Files/Sohag Magazine - May 22.pdf">May Magazine Available Now</a></marquee>
+		<button class="news" onclick="News()" style="width: 310px;">May Magazine Available Now</button>
         <img src="TransparentIcon.png" alt="We Logo" style="width: 200px;" />
         <br />
         <div class="padding">
@@ -58,6 +63,9 @@
             }
             function MissionAndVision() {
                 window.open("MissionAndVision.html", "_self");
+            }
+            function News() {
+                window.open("Files/Sohag Magazine - May 22.pdf", "_blank");
             }
         </script>
         <footer>
