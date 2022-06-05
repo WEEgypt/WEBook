@@ -33,14 +33,11 @@ function PressEnterToLogin() {
 window.onscroll = function () {
     if (window.pageYOffset < 10) {
         document.getElementById("logout").style.top = "15px";
+        document.getElementById("notifications").style.top = "15px";
+        document.getElementById("about").style.top = "15px";
     } else {
         document.getElementById("logout").style.top = "-50px";
+        document.getElementById("notifications").style.top = "-50px";
+        document.getElementById("about").style.top = "-50px";
     }
 };
-function More() {
-    if (more.style.display === "none") {
-        more.style.display = "block";
-    } else {
-        more.style.display = "none";
-    }
-}

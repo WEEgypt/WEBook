@@ -99,6 +99,12 @@ footer {
     top: 15px;
     transition: top 0.3s;
 }
+.notifications {
+    position: fixed;
+    left: 50px;
+    top: 15px;
+    transition: top 0.3s;
+}
 .about {
     position: fixed;
     left: 15px;
@@ -122,6 +128,9 @@ footer {
 }
 .fa-sign-out:before {
     content: "\f08b";
+}
+.fa-bell-o:before {
+    content: "\f0a2";
 }
 .fa-info-circle:before {
     content: "\f05a";
