@@ -37,3 +37,10 @@ window.onscroll = function () {
         document.getElementById("logout").style.top = "-50px";
     }
 };
+function More() {
+    if (more.style.display === "none") {
+        more.style.display = "block";
+    } else {
+        more.style.display = "none";
+    }
+}
