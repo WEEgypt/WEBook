@@ -141,3 +141,8 @@ footer {
 .fa-info-circle:before {
     content: "\f05a";
 }
+input[type="submit"] {
+    background-color: #6c4389;
+    color: var(--color);
+	border-color: #7a5099;
+}
