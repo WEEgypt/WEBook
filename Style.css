@@ -111,6 +111,12 @@ footer {
     top: 15px;
     transition: top 0.3s;
 }
+.search {
+    position: fixed;
+    right: 70px;
+    top: 18px;
+    transition: top 0.3s;
+}
 @font-face {
     font-family: "FontAwesome";
     src: url("Fonts/fontawesome-webfont.woff?v=4.7.0");
