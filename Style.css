@@ -95,7 +95,7 @@ footer {
 }
 .logout {
     position: fixed;
-    right: 15px;
+    left: 15px;
     top: 15px;
     transition: top 0.3s;
 }
@@ -107,15 +107,16 @@ footer {
 }
 .about {
     position: fixed;
-    left: 15px;
+    left: 90px;
     top: 15px;
     transition: top 0.3s;
 }
 .search {
     position: fixed;
-    left: 90px;
+    right: 5px;
     top: 18px;
     transition: top 0.3s;
+    min-width: 220px;
 }
 @font-face {
     font-family: "FontAwesome";
@@ -144,5 +145,8 @@ footer {
 input[type="submit"] {
     background-color: #6c4389;
     color: var(--color);
-	border-color: #7a5099;
+    border-color: #7a5099;
+}
+input[type="text"] {
+    border-color: #6c4389;
 }
