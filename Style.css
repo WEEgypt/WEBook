@@ -1,11 +1,13 @@
 :root {
     --bg: #fff;
     --color: #fff;
+    --input-color: #000;
 }
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: #000;
         --color: #000;
+        --input-color: #fff;
     }
 }
 * {
@@ -113,7 +115,7 @@ footer {
 }
 .search {
     position: fixed;
-    right: 5px;
+    right: 8px;
     top: 18px;
     transition: top 0.3s;
     min-width: 220px;
@@ -145,8 +147,16 @@ footer {
 input[type="submit"] {
     background-color: #6c4389;
     color: var(--color);
-    border-color: #7a5099;
+    border-color: #6c4389;
+    border-radius: 12px;
+    border-style: solid;
 }
 input[type="text"] {
+    background-color: var(--bg);
+    color: var(--input-color);
     border-color: #6c4389;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-style: solid;
 }
