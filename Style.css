@@ -113,7 +113,7 @@ footer {
 }
 .search {
     position: fixed;
-    right: 70px;
+    left: 90px;
     top: 18px;
     transition: top 0.3s;
 }
