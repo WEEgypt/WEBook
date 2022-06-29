@@ -14,9 +14,7 @@ var passwordHash = "835303514";
         }
     }
     init2: function Check() {
-        if (localStorage.getItem("login") != passwordHash) {
-            window.open("LoginPage.html", "_self");
-        }
+
     }
     init3: function CheckForLoginPageOnly() {
         if (localStorage.getItem("login") == passwordHash) {
