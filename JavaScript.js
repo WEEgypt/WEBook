@@ -8,30 +8,23 @@ var passwordHash = "835303514";
         }
         localStorage.setItem("login", password);
         if (localStorage.getItem("login") == passwordHash) {
-            window.open("index.html", "_self");
+            loginDiv.style.display = "none";
+            mainDiv.style.display = "block";
         } else {
+            loginDiv.style.display = "block";
+            mainDiv.style.display = "none";
             document.getElementById("alert").style.display = "block";
         }
     }
-    init2: function Check() {
-
-    }
-    init3: function CheckForLoginPageOnly() {
-        if (localStorage.getItem("login") == passwordHash) {
-            window.open("index.html", "_self");
-        }
-    }
-}
-function Logout() {
-    localStorage.setItem("login", "");
-}
-function SetFocus() {
-    document.getElementById("login").focus();
 }
 function PressEnterToLogin() {
     if (event.which == 13 || event.keyCode == 13) {
         Login();
     }
+}
+function Logout() {
+    localStorage.setItem("login", "");
+    location.reload();
 }
 window.onscroll = function () {
     if (window.pageYOffset < 10) {

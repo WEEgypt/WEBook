@@ -3,42 +3,56 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <meta name="keywords" content="about" />
         <title>WE Book - About Us</title>
         <link rel="icon" href="Icon.png" />
         <link rel="apple-touch-icon" href="Icon.png" />
         <link rel="stylesheet" href="Style.css" />
-        <script onload="Check()" src="JavaScript.js"></script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9496468298938378" crossorigin="anonymous"></script>
+        <script src="JavaScript.js"></script>
     </head>
     <body>
-        <a id="logout" class="logout" href="LoginPage.html" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #6c4389;"></i></a>
-        <br />
-        <br />
-        <h3 style="color: #6c4389;">About Us</h3>
-        <div class="padding">
-            <p>
-                This application was created by the Sohag team<br />
-                to make it easier for all employees to access information easily.<br />
-                <br />
-                Our Team<br />
-                <br />
-                Mamdouh Khalaf "Almaragha Store Manager"<br />
-                Mohamed Abdou "Tahta Store Manager"<br />
-                Eslam Gezery "Eltagdeef Store Manager"<br />
-                Adham Mahmoud "Sharq Alnil Store Manager"<br />
-                <br />
-                <br />
-                <a style="color: #6c4389;" href="https://api.whatsapp.com/send?phone=201555506627&text=From%20WEBook%20APP">Contact Us On WhatsApp</a>
-            </p>
-            <br />
+        <div id="loginDiv" style="display: none;" class="protected">
+            <div class="protected__alert" id="alert">You entered the wrong password</div>
+            <div class="protected__content">
+                <h1 class="protected__content__heading">You need a password to continue</h1>
+                <input class="protected__content__input" id="login" type="password" placeholder="password" onkeypress="PressEnterToLogin()" />
+                <button onclick="Login()" id="button" type="button" class="protected__content__btn">Continue</button>
+            </div>
         </div>
-        <script></script>
-        <footer>
-            <br />
-            <button class="back" onclick="history.back()">Back</button>
+        <div id="mainDiv" style="display: block;">
+            <a id="logout" class="logout" href="#" title="Logout" onclick="Logout();"><i class="fa fa-sign-out" style="font-size: 28px; color: #6c4389;"></i></a>
             <br />
             <br />
-        </footer>
+            <h3 style="color: #6c4389;">About Us</h3>
+            <div class="padding">
+                <p>
+                    This application was created by the Sohag team<br />
+                    to make it easier for all employees to access information easily.<br />
+                    <br />
+                    Our Team<br />
+                    <br />
+                    Mamdouh Khalaf "Almaragha Store Manager"<br />
+                    Mohamed Abdou "Tahta Store Manager"<br />
+                    Eslam Gezery "Eltagdeef Store Manager"<br />
+                    Adham Mahmoud "Sharq Alnil Store Manager"<br />
+                    <br />
+                    <br />
+                    <a style="color: #6c4389;" href="https://api.whatsapp.com/send?phone=201555506627&text=From%20WEBook">Contact Us On WhatsApp</a>
+                </p>
+                <br />
+            </div>
+            <script>
+                if (localStorage.getItem("login") != passwordHash) {
+                    loginDiv.style.display = "block";
+                    mainDiv.style.display = "none";
+                    document.getElementById("login").focus();
+                }
+            </script>
+            <footer>
+                <br />
+                <button class="back" onclick="history.back()">Back</button>
+                <br />
+                <br />
+            </footer>
+        </div>
     </body>
 </html>
