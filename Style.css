@@ -114,7 +114,7 @@ footer {
     transition: top 0.3s;
 }
 #search {
-    text-align: right;
+    text-align: initial;
     min-width: 320px;
     position: relative;
     top: 65px;
